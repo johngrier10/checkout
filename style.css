@@ -52,6 +52,7 @@ background: linear-gradient(135deg, rgba(45,20,1,1) 0%, rgba(88,48,16,1) 15%, rg
 }
 img{
     width: 100%;
+    height: auto;
     display: block;
     border-radius: 12%;
     padding: .5rem;
@@ -192,10 +193,15 @@ input[type='submit']{
 
 
 .input-with-icon i{
-    position: absolute;
+    position: relative;
     top: 3.9rem;
     left: 14px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+}
+
+.input-with-icon i{
+    position: absolute;
+    top: 4.18rem;
 }
 
 .button_with_icon{
@@ -244,7 +250,7 @@ select i{
     left: 14px
 }
 label{
-    font-size: 1rem;
+    font-size: 1.3rem;
     color:rgba(88,48,16,1);
     font-weight: 900;
 }
@@ -288,7 +294,9 @@ form h3{
 }
 
 
-
+i::before{
+    font-size: 2rem;
+}
 
 
 
