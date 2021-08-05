@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+
+
+    <div class="user-info">
+        <div class="contact-info">
+            <form>
+                <h3>Contact Information</h3>
+    
+                <div class="input-with-icon">
+                  <label for="email" >E-mail</label><br>
+                  <input type="email" id="email" name="email" 
+                  placeholder="Enter your email..." >
+                  <i class="fa fa-solid fa-envelope fa-lg" aria-hidden="true"></i>  
+                </div>
+    
+                <div class="input-with-icon">
+                  <label for="phone">Phone</label><br>
+                  <input type="text" id="phone" name="phone" 
+                  placeholder="Enter your phone...">
+                  <i class="fa fa-solid fa-phone fa-lg" aria-hidden="true"
+                   ></i>  
+               </div>
+    
+              </form>
+        </div>
+
+
+        <div class="shipping-info">
+            <form>
+                <h3>Shipping Information</h3>
+    
+                <div class="input-with-icon">
+                  <label for="name">Full name</label><br>
+                  <input type="text" id="name" name="name"
+                  placeholder="Your name..">
+                  <i class="fa fa-solid fa-user fa-lg" aria-hidden="true"></i>  
+               </div>
+    
+    
+               <div class="input-with-icon">
+                <label for="address">Your address..</label><br>
+                <input type="text" id="address" name="address"
+                placeholder="Your address..">
+                <i class="fa fa-solid fa-home fa-lg" aria-hidden="true"></i>  
+             </div>
+    
+    
+    
+             <div class="input-with-icon">
+              <label for="city">City</label><br>
+              <input type="text" id="city" cityname="city"
+              placeholder="Your city...">
+              <i class="fa fa-solid fa-city fa-lg" aria-hidden="true"></i>  
+           </div>
+    
+                <div class="country-zip">
+                  <div class="country-container input-with-icon">
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country" >
+                      <option value="" selected>Your country..</option>
+                      <option value="USA">USA</option>
+                      <option value="canada">Canada</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="france">France</option>
+                    </select>
+                    <i class="fa fa-solid fa-city fa-lg" aria-hidden="true"></i>
+                  </div>
+                  
+                  <div class="zip-container input-with-icon">  
+                    <label for="zip">Zip Code</label>
+                    <input type="text" pattern="[0-9]*" id="zip" name="zip"><br>
+                    <i class="fa fa-map-pin" aria-hidden="true"></i>
+      
+               
+                  </div>
+                </div>
+               
+                <div class="save-info">
+                  <input type="checkbox" id="save" name="save" value="true" >
+                  <label for="save">Save this information for next time</label>
+    
+                </div>
+                
+                <div class="submit-container">
+                  <input type="submit" value="Submit" class="submit">
+                </div>
+              </form>
+        </div>
+    </div>
+
+   
+    <div class="checkout-summary">
+
+        <div class="item-list">
+            
+            <div class="summary-item">
+
+                <div class="item-img"><img src="./img/photo1.png" alt="" srcset=""></div>
+                
+                <div class="item-info">
+                    <h3 class="item-name">Vintage Backbag</h3>
+                    <div class="price-line">
+                        <div class="discount-price"><p>$54.99</p></div>
+                        <div class="original-price"><p>$94.99</p></div>
+                    </div>          
+                    
+                    <div class="item-count">
+                        
+                        <button><span class="material-icons md-12" style="font-size: 16px;">
+                            add
+                        </span>
+                    </button> 
+                    
+                    <span style="color: #fff;">1</span>
+                    
+                    <button><span class="material-icons">
+                        remove
+                    </span>
+                    </button>
+                </div> 
+            </div>   
+            
+            </div>
+            <div class="summary-item">
+
+                <div class="item-img"><img src="./img/photo2.png" alt="" srcset=""></div>
+                
+                <div class="item-info">
+                    <h3 class="item-name">Levi Shoes</h3>
+                    <div class="price-line">
+                        <div class="discount-price"><p>$74.99</p></div>
+                        <div class="original-price"><p>$124.99</p></div>
+                    </div>          
+                    
+                    <div class="item-count">
+                        
+                        <button><span class="material-icons md-12" style="font-size: 16px;">
+                            add
+                        </span>
+                    </button> 
+                    
+                    <span style="color: #fff;">1</span>
+                    
+                    <button><span class="material-icons">
+                        remove
+                    </span>
+                    </button>
+                </div> 
+            </div>   
+            
+            </div>
+       
+        </div>
+        
+        
+        <div class="sub-total">
+            <div class="shipping">
+                <h2>Shipping</h2>
+                <p>$19</p>
+            </div>
+            
+            <div class="total">
+                <h2>Total</h2>
+                <p>$148.99</p>
+            </div>
+        </div>
+
+    </div>
+ 
+           
+           
+
+
+</body>
+</html>
